@@ -1,0 +1,36 @@
+@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="col-md-6 offset-md-3 card">
+    <div class="">
+        <h4>Register</h4>
+    </div>
+    <form method="post" asp-controller="Auth" asp-action="Register" asp-route-returnUrl="@Model.ReturnUrl">
+        <div class="text-danger" asp-validation-summary="All"></div>
+        <input type="hidden" asp-for="ReturnUrl"/>
+        <div class="form-group">
+            <label asp-for="Fullname">Fullname</label>
+            <input asp-for="Fullname" class="form-control" id="fullname" placeholder="Enter your fullname">
+        </div>
+        <div class="form-group">
+            <label asp-for="Email">Email address</label>
+            <input asp-for="Email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">Password</label>
+            <input asp-for="Password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label asp-for="ConfirmPassword">Password</label>
+            <input asp-for="ConfirmPassword" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+        <div class="form-group">
+            Already registered? <a asp-controller="Auth" asp-action="Register" asp-route-returnUrl="@Model.ReturnUrl">login here</a>
+        </div>
+    </form>
+</div>

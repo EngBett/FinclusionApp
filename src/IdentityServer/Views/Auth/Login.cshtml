@@ -1,0 +1,29 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="card col-md-6 offset-md-3">
+    <div class="">
+        <h4>Login</h4>
+    </div>
+    <form method="post" asp-controller="Auth" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">
+        <div class="text-danger" asp-validation-summary="All"></div>
+
+        <input type="hidden" asp-for="ReturnUrl"/>
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">Password</label>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+        <div class="form-group">
+            No account? <a asp-controller="Auth" asp-action="Register" asp-route-returnUrl="@Model.ReturnUrl">register here</a>
+        </div>
+    </form>
+</div>
