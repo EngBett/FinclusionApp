@@ -95,6 +95,6 @@ On your terminal navigate to AccManagement directory `~$ cd ../AccManagement` an
 ### Running the applications
 Navigate to each of the three folders on terminal and execute `~$ dotnet run`<br>
 The applications will run as follows:<br>
->Identity server on `https://localhost:5001/` <br>
+>IdentityServer on `https://localhost:5001/` <br>
 >AccManagement on `https://localhost:5005/` <br>
 >StoreApi on `https://localhost:5003/swagger` <br>
