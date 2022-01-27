@@ -11,36 +11,36 @@ services:
       SA_PASSWORD: ${MSSQL_PASSWORD}
       ACCEPT_EULA: "Y"
   
-  identity-server:
-    container_name: identity-server
-    build: ./IdentityServer
-    restart: always
-    ports:
-      - "5000:80"
-    volumes:
-      - .:/identity-server
-    depends_on:
-      - db
-        
-  store-api:
-    container_name: store-api
-    build: ./StoreApi
-    restart: always
-    ports:
-      - "5002:80"
-    volumes:
-      - .:/store-api
-    depends_on:
-      - db
-    
-  acc-management:
-    container_name: acc-management
-    build: ./AccManagement
-    restart: always
-    ports:
-      - "5004:80"
-    volumes:
-      - .:/acc-management
-    depends_on: 
-      - db
- 
+#  identity-server:
+#    container_name: identity-server
+#    build: ./IdentityServer
+#    restart: always
+#    ports:
+#      - "5000:80"
+#    volumes:
+#      - .:/identity-server
+#    depends_on:
+#      - db
+#        
+#  store-api:
+#    container_name: store-api
+#    build: ./StoreApi
+#    restart: always
+#    ports:
+#      - "5002:80"
+#    volumes:
+#      - .:/store-api
+#    depends_on:
+#      - db
+#    
+#  acc-management:
+#    container_name: acc-management
+#    build: ./AccManagement
+#    restart: always
+#    ports:
+#      - "5004:80"
+#    volumes:
+#      - .:/acc-management
+#    depends_on: 
+#      - db
+# 
