@@ -9,7 +9,7 @@ Container errors still being fixed.
 
 #### Create the database
 Navigate to the src folder and open `docker-compose.yml` file  
-comment the all services except `mssql_db` as shown below:
+comment the all services except `db` service as shown below:
 ```
 version: "3.9"
 
