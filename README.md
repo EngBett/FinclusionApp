@@ -3,7 +3,7 @@
 ## Running the application
 
 ### 1. Via docker containers
-Container errors still being fixed.
+Container errors still being fixed. *(Database access, updating db with migrations)*
 
 ### 2. Locally
 
