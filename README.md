@@ -3,7 +3,10 @@
 ## Running the application
 
 ### 1. Via docker containers
-Container errors still being fixed. *(Database access, updating db with migrations)*
+Navigate to `/src` directory on terminal and run 
+```
+~$ docker-compose up -d 
+```
 
 ### 2. Locally
 
