@@ -20,7 +20,7 @@ namespace AccManagement
         {
             var host = CreateHostBuilder(args).Build();
 
-            /*//Apply migrations
+            //Apply migrations
             using (var scope = host.Services.CreateScope())
             {
                 var appDbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
@@ -38,7 +38,6 @@ namespace AccManagement
                     appDbContext.Database.EnsureCreated();
                 }
             }
-            */
 
             host.Run();
         }

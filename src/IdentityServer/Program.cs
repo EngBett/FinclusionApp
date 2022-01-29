@@ -56,7 +56,7 @@ namespace IdentityServer
                     var configurationDbContext = scope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
 
 
-                    /*try
+                    try
                     {
                         ctx.Database.Migrate();
                         persistedGrantDbContext.Database.Migrate();
@@ -71,7 +71,7 @@ namespace IdentityServer
                         ctx.Database.EnsureCreated();
                         persistedGrantDbContext.Database.EnsureCreated();
                         configurationDbContext.Database.Migrate();
-                    }*/
+                    }
 
 
                     var userMgr = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();

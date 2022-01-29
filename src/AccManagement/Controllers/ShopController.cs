@@ -39,7 +39,7 @@ namespace AccManagement.Controllers
         {
             //retrieve access token
             var serverClient = _clientFactory.CreateClient();
-            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync("https://localhost:5001/");
+            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync("http://localhost:5000/");
             var tokenResponse = await serverClient.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = discoveryDoc.TokenEndpoint,
@@ -54,7 +54,7 @@ namespace AccManagement.Controllers
             //retrieve secret data
             var apiClient = _clientFactory.CreateClient();
             apiClient.SetBearerToken(tokenResponse.AccessToken);
-            var res = await apiClient.GetAsync("https://localhost:5003/api/products");
+            var res = await apiClient.GetAsync("http://localhost:5002/api/products");
 
             if (!res.IsSuccessStatusCode)
                 return RedirectToAction("Index", "Account", new { error = "Shop threw a bad request" });
@@ -79,7 +79,7 @@ namespace AccManagement.Controllers
             
             //retrieve access token
             var serverClient = _clientFactory.CreateClient();
-            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync("https://localhost:5001/");
+            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync("http://localhost:5000/");
             var tokenResponse = await serverClient.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = discoveryDoc.TokenEndpoint,
@@ -91,7 +91,7 @@ namespace AccManagement.Controllers
             //retrieve secret data
             var apiClient = _clientFactory.CreateClient();
             apiClient.SetBearerToken(tokenResponse.AccessToken);
-            var res = await apiClient.GetAsync($"https://localhost:5003/api/products/{id}");
+            var res = await apiClient.GetAsync($"http://localhost:5002/api/products/{id}");
             var content = await res.Content.ReadAsStringAsync();
             var options = new JsonSerializerOptions
             {

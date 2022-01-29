@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\IdentityServer\\IdentityServer.csproj",
+  "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\IdentityServer\\IdentityServer.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,43 +14402,43 @@
   "RootNamespace": "IdentityServer",
   "Documents": [
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\IdentityServer\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\IdentityServer\\Views\\Auth\\Login.cshtml",
-      "TargetPath": "Views\\Auth\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\IdentityServer\\Views\\Auth\\Users.cshtml",
-      "TargetPath": "Views\\Auth\\Users.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\IdentityServer\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\IdentityServer\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\IdentityServer\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\IdentityServer\\Views\\Auth\\Login.cshtml",
+      "TargetPath": "Views\\Auth\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\IdentityServer\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\IdentityServer\\Views\\Auth\\Register.cshtml",
+      "TargetPath": "Views\\Auth\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\IdentityServer\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\IdentityServer\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\IdentityServer\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\IdentityServer\\Views\\Auth\\Users.cshtml",
+      "TargetPath": "Views\\Auth\\Users.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\IdentityServer\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\IdentityServer\\Views\\Auth\\Register.cshtml",
-      "TargetPath": "Views\\Auth\\Register.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\IdentityServer\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],
