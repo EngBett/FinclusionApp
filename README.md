@@ -58,7 +58,8 @@ services:
 #      - db
 # 
 ```
-Open your terminal and navigate to the `src` directory. Fire up the database container by running the command below:<br> `> docker-compose up -d`<br><br>
+Open your terminal and navigate to the `src` directory.<br>
+Fire up the database container by running the command below:<br> `~$ docker-compose up -d`<br><br>
 I deliberately included the `.env` file to keep the db password.<br>
 
 ####  Identity server migrations
