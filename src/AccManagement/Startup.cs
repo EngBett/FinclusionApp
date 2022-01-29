@@ -30,7 +30,7 @@ namespace AccManagement
         {
             //Add automapper
             services.AddAutoMapper(typeof(Startup));
-            
+
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(o =>
                 o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
@@ -42,7 +42,8 @@ namespace AccManagement
                 .AddCookie("Cookie")
                 .AddOpenIdConnect("oidc", c =>
                 {
-                    c.Authority = "https://localhost:5001/";
+                    c.RequireHttpsMetadata = false;
+                    c.Authority = "http://localhost:5000/";
                     c.ClientId = "AccManagementId";
                     c.ClientSecret = "AccManagementSecret";
                     c.SaveTokens = true;
@@ -50,15 +51,16 @@ namespace AccManagement
                     c.ResponseType = "code";
 
                     c.GetClaimsFromUserInfoEndpoint = true;
-                    c.ClaimActions.MapJsonKey("role","role","role");
+                    c.ClaimActions.MapJsonKey("role", "role", "role");
                     c.TokenValidationParameters.NameClaimType = "name";
                     c.TokenValidationParameters.RoleClaimType = "role";
                 });
-            
+
             services.AddHttpClient();
             services.AddHttpContextAccessor();
-            services.AddSession(options => {  
-                options.IdleTimeout = TimeSpan.FromMinutes(10);   
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(10);
             });
 
             services.AddScoped<IAccountRepository, AccountRepository>();
@@ -78,7 +80,7 @@ namespace AccManagement
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-            
+
             app.Use(async (context, next) =>
             {
                 await next();
@@ -101,8 +103,8 @@ namespace AccManagement
                 }
             });
 
-            app.UseSession(); 
-            app.UseHttpsRedirection();
+            app.UseSession();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();

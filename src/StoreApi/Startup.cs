@@ -32,7 +32,8 @@ namespace StoreApi
 
             services.AddAuthentication("Bearer").AddJwtBearer("Bearer", o =>
             {
-                o.Authority = "https://localhost:5001/";
+                o.RequireHttpsMetadata = false;
+                o.Authority = "http://localhost:5000/";
                 o.Audience = "StoreApi";
                 o.TokenValidationParameters = new TokenValidationParameters
                 {
@@ -59,7 +60,7 @@ namespace StoreApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "StoreApi v1"));
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

@@ -10,7 +10,6 @@ services:
     environment:
       SA_PASSWORD: ${MSSQL_PASSWORD}
       ACCEPT_EULA: "Y"
-      MSSQL_PID="Express"
   
   identity-server:
     container_name: identity-server

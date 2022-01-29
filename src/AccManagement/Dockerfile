@@ -14,7 +14,7 @@ COPY ../ ./
 # Run Migrations
 RUN dotnet ef migrations add InitMigrations -o=Data/Migrations
 # Update database
-RUN dotnet ef database update
+# RUN dotnet ef database update
 RUN dotnet publish -c Release -o out
 
 # Build runtime image

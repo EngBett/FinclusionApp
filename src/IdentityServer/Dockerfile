@@ -18,9 +18,9 @@ RUN dotnet ef migrations add InitialIdentityServerConfigurationDbMigration -c Co
 RUN dotnet ef migrations add InitialMigrations -c AppDbContext -o Data/Migrations
 
 # Update database
-RUN dotnet ef database update -c PersistedGrantDbContext
-RUN dotnet ef database update -c ConfigurationDbContext
-RUN dotnet ef database update -c AppDbContext
+# RUN dotnet ef database update -c PersistedGrantDbContext
+# RUN dotnet ef database update -c ConfigurationDbContext
+# RUN dotnet ef database update -c AppDbContext
 RUN dotnet publish -c Release -o out
 
 # Build runtime image

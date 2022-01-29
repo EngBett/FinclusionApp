@@ -21,7 +21,7 @@ namespace StoreApi.Controllers
         {
             //retrieve access token
             var serverClient = _clientFactory.CreateClient();
-            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync("https://localhost:5001/");
+            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync("http://localhost:5000/");
             var tokenResponse = await serverClient.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = discoveryDoc.TokenEndpoint,

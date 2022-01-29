@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\AccManagement.csproj",
+  "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\AccManagement.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,98 +15619,98 @@
   "RootNamespace": "AccManagement",
   "Documents": [
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Account\\Deposit.cshtml",
-      "TargetPath": "Views\\Account\\Deposit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Shop\\Checkout.cshtml",
-      "TargetPath": "Views\\Shop\\Checkout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Account\\Show.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Account\\Show.cshtml",
       "TargetPath": "Views\\Account\\Show.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Account\\AccessDenied.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Account\\AccessDenied.cshtml",
       "TargetPath": "Views\\Account\\AccessDenied.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Account\\Index.cshtml",
-      "TargetPath": "Views\\Account\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Account\\All.cshtml",
-      "TargetPath": "Views\\Account\\All.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Error\\E403.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Error\\E403.cshtml",
       "TargetPath": "Views\\Error\\E403.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Account\\Withdraw.cshtml",
-      "TargetPath": "Views\\Account\\Withdraw.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Transaction\\Index.cshtml",
-      "TargetPath": "Views\\Transaction\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Error\\E500.cshtml",
-      "TargetPath": "Views\\Error\\E500.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Shop\\Index.cshtml",
-      "TargetPath": "Views\\Shop\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Account\\All.cshtml",
+      "TargetPath": "Views\\Account\\All.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Shop\\Index.cshtml",
+      "TargetPath": "Views\\Shop\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Account\\Withdraw.cshtml",
+      "TargetPath": "Views\\Account\\Withdraw.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Error\\E404.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Error\\E500.cshtml",
+      "TargetPath": "Views\\Error\\E500.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Account\\Index.cshtml",
+      "TargetPath": "Views\\Account\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Error\\E404.cshtml",
       "TargetPath": "Views\\Error\\E404.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeProjects\\Finclussion\\FinclusionApp\\src\\AccManagement\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Account\\Deposit.cshtml",
+      "TargetPath": "Views\\Account\\Deposit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Shop\\Checkout.cshtml",
+      "TargetPath": "Views\\Shop\\Checkout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\Transaction\\Index.cshtml",
+      "TargetPath": "Views\\Transaction\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\icodeio\\Documents\\CSharp\\FinclusionApp\\src\\AccManagement\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

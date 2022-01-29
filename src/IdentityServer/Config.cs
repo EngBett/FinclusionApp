@@ -43,7 +43,7 @@ namespace IdentityServer
                 {
                     ClientId = "AccManagementId",
                     ClientSecrets = { new Secret("AccManagementSecret".ToSha256()) },
-                    RedirectUris = { "https://localhost:5005/signin-oidc" },
+                    RedirectUris = { "http://localhost:5004/signin-oidc" },
                     AllowedGrantTypes = GrantTypes.Code,
                     AllowedScopes =
                     {
