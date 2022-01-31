@@ -2,6 +2,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace StoreApi.Controllers
 {
@@ -10,10 +11,12 @@ namespace StoreApi.Controllers
     public class TestController : ControllerBase
     {
         private readonly IHttpClientFactory _clientFactory;
+        private readonly IConfiguration _config;
 
-        public TestController(IHttpClientFactory clientFactory)
+        public TestController(IHttpClientFactory clientFactory,IConfiguration config)
         {
             _clientFactory = clientFactory;
+            _config = config;
         }
 
         [HttpGet]
@@ -21,7 +24,7 @@ namespace StoreApi.Controllers
         {
             //retrieve access token
             var serverClient = _clientFactory.CreateClient();
-            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync("http://localhost:5000/");
+            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync($"{_config.GetSection("IdentityServer").Value}/");
             var tokenResponse = await serverClient.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = discoveryDoc.TokenEndpoint,

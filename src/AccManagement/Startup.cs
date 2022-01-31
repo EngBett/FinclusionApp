@@ -43,7 +43,7 @@ namespace AccManagement
                 .AddOpenIdConnect("oidc", c =>
                 {
                     c.RequireHttpsMetadata = false;
-                    c.Authority = "http://localhost:5000/";
+                    c.Authority = $"{Configuration.GetSection("IdentityServer").Value}/";
                     c.ClientId = "AccManagementId";
                     c.ClientSecret = "AccManagementSecret";
                     c.SaveTokens = true;

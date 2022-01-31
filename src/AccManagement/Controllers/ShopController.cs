@@ -13,6 +13,7 @@ using IdentityModel.Client;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace AccManagement.Controllers
 {
@@ -21,13 +22,15 @@ namespace AccManagement.Controllers
     {
         private readonly IHttpClientFactory _clientFactory;
         private readonly IAccountRepository _accountRepo;
+        private readonly IConfiguration _config;
         private Account UserAccount { get; set; }
 
-        public ShopController(IHttpClientFactory clientFactory, IAccountRepository accountRepo,IHttpContextAccessor httpContextAccessor)
+        public ShopController(IHttpClientFactory clientFactory, IAccountRepository accountRepo,IHttpContextAccessor httpContextAccessor,IConfiguration config)
         {
             _clientFactory = clientFactory;
             _accountRepo = accountRepo;
-            
+            _config = config;
+
             if (httpContextAccessor.HttpContext.User.IsInRole("SuperAdmin")) return;
             var userId = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
 
@@ -39,7 +42,7 @@ namespace AccManagement.Controllers
         {
             //retrieve access token
             var serverClient = _clientFactory.CreateClient();
-            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync("http://localhost:5000/");
+            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync($"{_config.GetSection("IdentityServer").Value}/");
             var tokenResponse = await serverClient.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = discoveryDoc.TokenEndpoint,
@@ -54,7 +57,7 @@ namespace AccManagement.Controllers
             //retrieve secret data
             var apiClient = _clientFactory.CreateClient();
             apiClient.SetBearerToken(tokenResponse.AccessToken);
-            var res = await apiClient.GetAsync("http://localhost:5002/api/products");
+            var res = await apiClient.GetAsync($"{_config.GetSection("StoreApi").Value}/api/products");
 
             if (!res.IsSuccessStatusCode)
                 return RedirectToAction("Index", "Account", new { error = "Shop threw a bad request" });
@@ -79,7 +82,7 @@ namespace AccManagement.Controllers
             
             //retrieve access token
             var serverClient = _clientFactory.CreateClient();
-            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync("http://localhost:5000/");
+            var discoveryDoc = await serverClient.GetDiscoveryDocumentAsync($"{_config.GetSection("IdentityServer").Value}/");
             var tokenResponse = await serverClient.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = discoveryDoc.TokenEndpoint,
@@ -91,7 +94,7 @@ namespace AccManagement.Controllers
             //retrieve secret data
             var apiClient = _clientFactory.CreateClient();
             apiClient.SetBearerToken(tokenResponse.AccessToken);
-            var res = await apiClient.GetAsync($"http://localhost:5002/api/products/{id}");
+            var res = await apiClient.GetAsync($"{_config.GetSection("StoreApi").Value}/api/products/{id}");
             var content = await res.Content.ReadAsStringAsync();
             var options = new JsonSerializerOptions
             {

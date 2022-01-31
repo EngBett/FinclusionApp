@@ -33,7 +33,7 @@ namespace StoreApi
             services.AddAuthentication("Bearer").AddJwtBearer("Bearer", o =>
             {
                 o.RequireHttpsMetadata = false;
-                o.Authority = "http://localhost:5000/";
+                o.Authority = $"{Configuration.GetSection("IdentityServer").Value}/";
                 o.Audience = "StoreApi";
                 o.TokenValidationParameters = new TokenValidationParameters
                 {
@@ -50,7 +50,6 @@ namespace StoreApi
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
