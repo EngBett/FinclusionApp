@@ -5,7 +5,7 @@
 ### 1. Via docker containers
 Navigate to `/src` directory on terminal and run 
 ```
-~$ docker-compose up -d 
+docker-compose up -d 
 ```
 
 ### 2. Locally
@@ -68,32 +68,32 @@ I deliberately included the `.env` file to keep the db password.<br>
 ####  Identity server migrations
 On your terminal navigate to IdentityServer directory and run the following commands:
 ```
-~$  dotnet ef migrations add InitialIdentityServerPersistedGrantDbMigration -c PersistedGrantDbContext -o Data/Migrations/IdentityServer/PersistedGrantDb
+dotnet ef migrations add InitialIdentityServerPersistedGrantDbMigration -c PersistedGrantDbContext -o Data/Migrations/IdentityServer/PersistedGrantDb
 ```
 ```
-~$ dotnet ef migrations add InitialIdentityServerConfigurationDbMigration -c ConfigurationDbContext -o Data/Migrations/IdentityServer/ConfigurationDb
+dotnet ef migrations add InitialIdentityServerConfigurationDbMigration -c ConfigurationDbContext -o Data/Migrations/IdentityServer/ConfigurationDb
 ```
 ```
-~$  dotnet ef migrations add InitialDbMigration -c AppDbContext -o Data/Migrations
+dotnet ef migrations add InitialDbMigration -c AppDbContext -o Data/Migrations
 ```
 
 ```
-~$  dotnet ef database update -c PersistedGrantDbContext
+dotnet ef database update -c PersistedGrantDbContext
 ```
 ```
-~$  dotnet ef database update -c ConfigurationDbContext
+dotnet ef database update -c ConfigurationDbContext
 ```
 ```
-~$ dotnet ef database update -c AppDbContext
+dotnet ef database update -c AppDbContext
 ```
 
 ####  Account management migrations
 On your terminal navigate to AccManagement directory `~$ cd ../AccManagement` and run the following commands:
 ```
-~$  dotnet ef migrations add InitialDbMigration -c AppDbContext -o Data/Migrations
+dotnet ef migrations add InitialDbMigration -c AppDbContext -o Data/Migrations
 ```
 ```
-~$ dotnet ef database update -c AppDbContext
+dotnet ef database update -c AppDbContext
 ```
 
 ### Running the applications
